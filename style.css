@@ -1,0 +1,50 @@
+body{margin: 0;padding: 0;box-sizing: border-box;max-width: 100%;background-color: #000;}
+h1, h2, h3, h4, h5, h6, ul, ol, li, p{margin: 0;padding: 0;}
+ul, ol{list-style: none;}
+a{text-decoration: none;color: black;}     
+img {max-width: 100%;display: block;}
+
+
+.wrapper {
+  position: relative;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.text {
+  color: #fff;
+  font-size: clamp(12px, 8vw, 192px);
+  position: relative;
+  background-color: #000;
+  display: inline-block;
+  white-space: normal;
+  word-wrap: break-word;
+}
+.hole-wrapper {
+  /* position: relative; */
+  display: inline-block;
+  width: clamp(12px, 8vw, 192px);
+  height: clamp(12px, 6vw, 192px);
+  vertical-align: middle;
+  overflow: hidden;
+  clip-path: inset(0 0 0 0);
+}
+.video-hole {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.hole-wrapper:nth-child(1) {
+  min-width: 35vw;
+}
+.hole-wrapper:nth-child(2) {
+  min-width: 20vw;
+}
+.hole-wrapper:nth-child(3) {
+  min-width: 25vw;
+}
+.hole-wrapper:nth-child(4) {
+  min-width: 59vw;
+}
